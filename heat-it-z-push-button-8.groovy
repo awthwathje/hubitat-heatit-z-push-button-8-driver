@@ -9,8 +9,8 @@ import groovy.transform.Field
 ]
 
 metadata {
-	definition (name: "HeatIt Z-Push Button 8", namespace: "foyl.io", author: "Awth Wathje") {
-		capability "PushableButton"
+    definition (name: "HeatIt Z-Push Button 8", namespace: "foyl.io", author: "Awth Wathje") {
+        capability "PushableButton"
         capability "HoldableButton"
         capability "ReleasableButton"
         capability "Battery"
@@ -23,11 +23,11 @@ metadata {
         attribute "wakeUpIntervalSeconds", "number" // factory: 43200
 
         fingerprint deviceId: "A305", inClusters: "0x5E,0x55,0x98,0x9F,0x6C", mfr: "019B", prod: "0300", deviceJoinName: "HeatIt Z-Push Button 8"
-	}
+    }
 
     preferences {
-		input name: "logEnable", type: "bool", title: "Enable logging", defaultValue: false
-	}
+        input name: "logEnable", type: "bool", title: "Enable logging", defaultValue: false
+    }
 }
 
 void configure() {
@@ -36,7 +36,7 @@ void configure() {
 }
 
 def parse(String description) {
-	hubitat.zwave.Command cmd = zwave.parse(description, COMMAND_CLASS_VERSIONS)
+    hubitat.zwave.Command cmd = zwave.parse(description, COMMAND_CLASS_VERSIONS)
     zwaveEvent(cmd)
 }
 
@@ -116,7 +116,7 @@ void zwaveEvent(hubitat.zwave.commands.centralscenev3.CentralSceneNotification c
 }
 
 void zwaveEvent(hubitat.zwave.commands.versionv2.VersionReport cmd) {
-	if (logEnable) log.info "${device.getName()}: versionv2.VersionReport: ${cmd}"
+    if (logEnable) log.info "${device.getName()}: versionv2.VersionReport: ${cmd}"
     sendEvent(name: "firmwareVersion", value: "${cmd.firmware0Version}.${cmd.firmware0SubVersion}")
     sendEvent(name: "hardwareVersion", value: "${cmd.hardwareVersion}")
 }
