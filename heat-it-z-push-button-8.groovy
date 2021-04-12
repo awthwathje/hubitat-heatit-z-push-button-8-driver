@@ -137,5 +137,5 @@ void zwaveEvent(hubitat.zwave.commands.centralscenev3.CentralSceneConfigurationR
 }
 
 void zwaveEvent(hubitat.zwave.Command cmd) {
-    if (logEnable) log.info "${device.getName()}: Received command was not handled hubitat.zwave.Command: ${cmd}"
+    if (logEnable) log.info "${device.getName()}: received command was not handled hubitat.zwave.Command: ${cmd}"
 }
