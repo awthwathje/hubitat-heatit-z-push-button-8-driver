@@ -1,0 +1,17 @@
+{
+  "packageName": "HeatIt Z-Push Button 8 driver",
+  "author": "Awth Wathje",
+  "minimumHEVersion": "2.2.6",
+  "licenseFile": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+  "dateReleased": "2021-04-13",
+  "drivers": [
+    {
+      "id": "0d00317c-3ef7-4762-89f0-a3556e989e57",
+      "name": "HeatIt Z-Push Button 8 driver",
+      "namespace": "foyl.io",
+      "location": "https://raw.githubusercontent.com/awthwathje/hubitat-heatit-z-push-button-8-driver/main/heat-it-z-push-button-8.groovy",
+      "version": "1.0.0",
+      "required": true
+    }
+  ]
+}
