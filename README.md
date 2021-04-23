@@ -6,7 +6,7 @@ How to install driver
 --
 Open the Hubitat Elevation web interface, go to the **Drivers Code**, click **New Driver**.
 
-In the New Driver window, click **Import** paste:
+In the New Driver window, click **Import** and paste:
 
 `https://raw.githubusercontent.com/awthwathje/hubitat-heatit-z-push-button-8-driver/main/heat-it-z-push-button-8.groovy`
 
