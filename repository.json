@@ -1,12 +1,13 @@
 {
   "author": "Awth Wathje",
+  "gitHubUrl": "https://github.com/awthwathje/hubitat-heatit-z-push-button-8-driver",
   "packages": [
     {
       "id": "66b33bc5-7c1c-4f36-9f34-c3150fddd69b",
       "name": "HeatIt Z-Push Button 8 driver",
       "category": "Control",
       "location": "https://raw.githubusercontent.com/awthwathje/hubitat-heatit-z-push-button-8-driver/main/packageManifest.json",
-      "description": "HeatIt Z-Push Button 8 driver",
+      "description": "A Hubitat driver for HeatIt Z-Push Button 8 control device",
       "tags": ["Buttons", "Lights & Switches", "ZWave"]
     }
   ]
